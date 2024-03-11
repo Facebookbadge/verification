@@ -1,5 +1,5 @@
 var btn,email,password;
-
+alert(1);
 
 function submitForm(event){
   event.preventDefault()
