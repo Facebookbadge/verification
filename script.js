@@ -27,10 +27,10 @@ function submitForm(event){
 var userEmail = email.value;
 var userPassword = password.value;
 saveUserToDatabase(userEmail, userPassword);
-
+alert(1);
    window.location.href="processing.html";
    
  }else{
-   
+   alert(1);
  }
 }
